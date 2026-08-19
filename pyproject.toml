@@ -27,6 +27,7 @@ dependencies = [
     "scikit-learn",
     "psifr",
     "cymr",
+    "h5py",
     "wikivector",
     "jinja2",
     "pingouin",
