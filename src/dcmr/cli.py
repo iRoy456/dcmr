@@ -323,6 +323,8 @@ def fit_cmr(
     recall_keys,
     category,
     similarity,
+    block,
+    snapshot,
 ):
     """
     Run a parameter search to fit a model and simulate data.
@@ -373,6 +375,8 @@ def fit_cmr(
         recall_keys,
         category,
         similarity,
+        block,
+        snapshot,
     )
 
 

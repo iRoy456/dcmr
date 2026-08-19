@@ -620,7 +620,8 @@ def save_patterns_sem(use_file, h5_file):
     loc_patterns = np.eye(len(items))
 
     # category patterns
-    category = np.repeat(['cel', 'loc', 'obj'], 256)
+    n_rep = int(np.ceil(len(items) / 3))
+    category = np.repeat(['cel', 'loc', 'obj'], n_rep)[:len(items)]
     cat_patterns = np.zeros((len(items), 3))
     cat_names = np.unique(category)
     for i in range(3):
@@ -644,7 +645,8 @@ def save_patterns_cdcatfr2(use_file, h5_file):
     loc_patterns = np.eye(len(items))
 
     # category patterns
-    category = np.repeat(['cel', 'loc', 'obj'], 256)
+    n_rep = int(np.ceil(len(items) / 3))
+    category = np.repeat(['cel', 'loc', 'obj'], n_rep)[:len(items)]
     cat_patterns = np.zeros((len(items), 3))
     cat_names = np.unique(category)
     for i in range(3):

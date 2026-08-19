@@ -137,3 +137,7 @@ docs/source/api/api
 
 # development Jupyter notebooks
 jupyter/dev/
+
+# Ignore massive NSD brain imaging data
+NSD/*.h5
+NSD/*.csv

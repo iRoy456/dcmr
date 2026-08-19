@@ -1423,6 +1423,8 @@ def run_fit(
     recall_keys=None,
     category=None,
     similarity=None,
+    block=None,
+    snapshot=True,
 ):
     """
     Fit parameters to individual subjects of a dataset.
@@ -1558,6 +1560,8 @@ def run_fit(
             study_keys=study_keys,
             category=category,
             similarity=similarity,
+            block=block,
+            snapshot=snapshot,
         )
     except Exception as e:
         logging.exception(f'Plotting fit failed with error: {e}')
