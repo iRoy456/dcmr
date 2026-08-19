@@ -104,3 +104,16 @@ dcmr-xval data.csv patterns.hdf5 loc none cmr_fit -k session
 ```
 
 Run `dcmr-xval -h` to see all options.
+
+## Running the NSD Phase 1 Analysis
+
+This repository includes custom scripts and Jupyter Notebooks for analyzing Phase 1 of the NSD (Natural Scenes Dataset) continuous recognition memory behavioral data. 
+
+**Important Data Requirement:**
+Because the fMRI brain imaging files exceed GitHub's strict 100MB file limit, they are not hosted directly in this repository. To run the `nsd_phase1_analysis.ipynb` notebook successfully, you must:
+
+1. Download the required `.h5` file (`subj01_mtl_betas.h5`, ~1.7GB).
+2. Place this file inside the `NSD/` directory at the root of your cloned repository.
+3. (Optional) If you are running the full semantic/visual similarity models, you may also need to download the corresponding large `.csv` files into the `NSD/` folder.
+
+Once the data is securely in the `NSD/` folder, you can open `jupyter/nsd_phase1_analysis.ipynb` and run all cells.
